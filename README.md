@@ -6,10 +6,9 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
-- [ci/cd](http://xyz.com) (GitHub Actions)
-- [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](http://xyz.com) (when applicable)
+- [submission PR](https://github.com/obadeh/Context-API/pull/1)
+- [back-end server url](https://api-js401.herokuapp.com/api/v1/todo)
+- [github pages](https://obadeh.github.io/Context-API/)
 
 ### Setup
 
