@@ -6,13 +6,13 @@ const Pagination = ({ postsPerPage, totalPosts, paginate ,curent}) => {
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
     pageNumbers.push(i);
   }
-const next = ()=>{
-    if(curent+1<=pageNumbers.length) paginate(curent+1)
-}
-const prev = ()=>{
-    if(curent-1>0) paginate(curent-1)
-    
-}
+  const next = ()=>{
+    if(curent + 1 <= pageNumbers.length) paginate(curent + 1);
+  };
+  const prev = ()=>{
+    if(curent - 1 > 0) paginate(curent - 1);
+
+  };
   return (
     <nav>
       <ul className='pagination'>

@@ -82,11 +82,26 @@ exports[`<App /> renders correctly 1`] = `
       >
         Show completed
       </button>
+      <nav>
+        <ul
+          className="pagination"
+        />
+        <button
+          onClick={[Function]}
+        >
+          previus
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          next
+        </button>
+      </nav>
     </div>
   </section>
   <footer>
     <p>
-      23:18:22 GMT+0200 (Eastern European Standard Time)
+      Thu Mar 12 2020
     </p>
     <h3>
       By obada Q 2020

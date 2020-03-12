@@ -5,7 +5,7 @@ import Modal from '../modal';
 import useForm from '../hooks/form.js';
 import Header from '../header/header.js';
 import Footer from '../footer/footer.js';
-import Pagination from '../pagination/pagination.js'
+import Pagination from '../pagination/pagination.js';
 import {SettingsContext} from '../context/setting.js';
 
 import './todo.scss';
@@ -85,13 +85,13 @@ const Todo2 = (props) =>{
     callAPI( todoAPI, 'GET', undefined, _updateState );
   };
 
- // Get current posts
- const indexOfLastPost = context.currentPage * context.postsPerPage;
- const indexOfFirstPost = indexOfLastPost - context.postsPerPage;
- const currentPosts = todoList.slice(indexOfFirstPost, indexOfLastPost);
+  // Get current posts
+  const indexOfLastPost = context.currentPage * context.postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - context.postsPerPage;
+  const currentPosts = todoList.slice(indexOfFirstPost, indexOfLastPost);
 
-//  // Change page
- const paginate = pageNumber => context.changeCurrentPage(pageNumber);
+  //  // Change page
+  const paginate = pageNumber => context.changeCurrentPage(pageNumber);
 
 
 
@@ -161,15 +161,15 @@ const Todo2 = (props) =>{
           <button onClick={hide}>Hide completed</button>
           <button onClick={show}>Show completed</button>
           <Pagination
-        postsPerPage={context.postsPerPage}
-        totalPosts={todoList.length}
-        paginate={paginate}
-        curent={context.currentPage}
-        />
+            postsPerPage={context.postsPerPage}
+            totalPosts={todoList.length}
+            paginate={paginate}
+            curent={context.currentPage}
+          />
         </div>
       </section>
 
-      
+
 
       <When condition={showDetails}>
         <Modal title="To Do Item" close={toggleDetails}>
