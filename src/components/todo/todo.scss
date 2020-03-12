@@ -112,3 +112,18 @@ header h2 {
     font-size: 30px;
 
 }
+
+.pagination{
+    display: flex;
+}
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+button:hover {
+    background-color: #000000df;
+    color: white;
+}
+  

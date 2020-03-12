@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Footer = props => {
 
-  let date = new Date().toTimeString();
+  let date = new Date().toDateString()
   return(
     <footer>
       <p>{date}</p>

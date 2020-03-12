@@ -4,12 +4,14 @@ export const SettingsContext = React.createContext();
 
 function SettingProvider(props) {
   const [display, setDisplay] = useState(true);
-  const [itemsNum, setItemsNum] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(5);
   const state = {
     display,
-    itemsNum,
+    currentPage,
+    postsPerPage,
     changeDisplay:setDisplay,
-    changeTwitter:setItemsNum,
+    changeCurrentPage:setCurrentPage,
   };
   return(
     <SettingsContext.Provider value={state}>
